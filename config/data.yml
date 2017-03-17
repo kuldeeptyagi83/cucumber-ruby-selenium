@@ -1,0 +1,8 @@
+ENV:
+ URL: "https://uat.electricityinfo.co.nz/"
+ Username: "kuldeep1@mailinator.com"
+ Password: "Abcde@123"
+
+PRICES:
+ Schedules: Final,Interim,Provisional,NRS,PRS,WDS,RTP,RTP avg
+ Market_Types: Energy,Reserves

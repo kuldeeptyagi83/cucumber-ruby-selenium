@@ -1,0 +1,75 @@
+#DashBoard Screen ##############################################################################
+dashboard_autoplay_xpath: //a[@href='#']
+dashboard_autoplay_css: .fa.fa-pause
+dashboard_login: //span[normalize-space(text())="Login"]/parent::a[@tabindex=0]
+dashboard_signup:  //a[@href='/public_users/sign_up' and @class='button']
+dashboard_sigin_message: //div[@id='toast-container']//div[normalize-space(text())="Signed in successfully."]
+#Login Screen ##############################################################################
+login_username_id: public_user_email
+login_username: //input[@id='public_user_email']
+login_password_id: public_user_password
+login_login_value: Log in
+login_login_name: commit
+login_login_xpath: //input[@name='commit']
+#Menu ##############################################################################
+menu_infeasibility: //nav[@class="medium-nav-list main-nav"]//a[@href="/infeasibilities"]
+menu_collapsed: //div[@class="medium-up-nav"]
+menu_login: //div[@class="medium-up-nav main-nav-open"]//span[normalize-space(text())="Login"]/parent::a[1]
+menu_logout: //div[@class="medium-up-nav main-nav-open"]//span[normalize-space(text())="Logout"]/parent::a[1]
+menu_slider: //div[@class='nav-handle']
+menu_pricestoggle_expand: //li[@id="pricesToggleBtn" and @class='selected']
+menu_pricestoggle: //span[text()='Prices']/parent::a
+menu_prices: //ul[@class="menu vertical"]//a[@href='/prices' and text()='Market Prices']
+menu_priceindex: //a[@href='/price_indexes']
+menu_constraints: //a[@href='/constraints']
+menu_outages: //a[@href='/outages']
+menu_hvdc: //a[@href='/hvdc']
+menu_historicdata: //a[@href='/historic_data']
+#Common ##############################################################################
+com_date: //a[@class="button secondary inactive" and normalize-space(text())='Date']
+com_rolling: //a[@class="button secondary active" and normalize-space(text())='Rolling']
+com_reset: //a[@title="Reset form to default values" and text()='Reset']
+com_refreshresult: //input[@value='Refresh results' and @name='commit']
+com_autorefresh: //a[@class="toggler-button"]
+com_csvdownload: //a[@id='csv-download']
+com_popoutnewtab: //a[@id='popout-table-link']
+#Constraints ##############################################################################
+constraints_final: //input[@id="run-types-f"]
+constraints_nrs: //input[@id="run-types-n"]
+constraints_rtp: //input[@id="run-types-i"]
+constraints_branchgroup: //input[@name="search_form[branch_group]"]
+constraints_binding: //select[@id='binding']
+constraints_showformula: //input[@id="show_formula"]
+constraints_latest: //input[@id="latest"]
+constraints_results: //a[@id="results-table-label"]
+#Prices ##############################################################################
+prices_title: //div[@class="screen-container"]//h1[contains(text(), 'Prices')]
+#--- Prices Schedule
+prices_final: //input[@id='run-types-f']
+prices_interim: //input[@id='run-types-t']
+prices_provisional: //input[@id='run-types-v']
+prices_nrs: //input[@id='run-types-n']
+prices_prs: //input[@id='run-types-a']
+prices_wds: //input[@id='run-types-w']
+prices_rtp: //input[@id='run-types-i']
+prices_rtpavg: //input[@id='run-types-5']
+prices_schedules: //switch-checkbox-item-list[@data-name='run_types']/div//span[1]
+#--- Prices Market Type
+prices_mtypeenergy: //input[@id='market-types-e']
+prices_mtypereserve: //input[@id='market-types-r']
+prices_mtypes: //switch-checkbox-item-list[@data-name='market_types']/div//span[1]
+#--- Prices Grid Points
+prices_gridpoints: //input[@placeholder="Select grid points"]
+prices_selectgridpoint: //a[normalize-space(text())='ABY0111']
+prices_deselectgridpoint: //span[normalize-space(text())='BEN2201']/a
+prices_msg_maxgridpoints: //span[text()='* Maximum limit of grid points exceeded']
+prices_select_gpg: //ul[@class="opt-group gpg no-bullet"]
+prices_select_opt_gp: //ul[@class="opt-group opt no-bullet"]
+prices_selected_gps: //div[@class='list-of-selected-options']/span
+#--- Prices date
+prices_fromdate: //input[@id='search_form_date_from']
+prices_fromtp: //select[@id='search_form_tp_from']
+prices_todate: //input[@id='search_form_date_to']
+prices_totp: //select[@id='search_form_tp_to']
+
+prices_msg_loading: //wits-in-progress-cover[2]//span[text()='Loading the data... Please wait.']

@@ -1,0 +1,14 @@
+# Created by .ignore support plugin (hsz.mobi)
+#.gitignore
+Gemfile.lock
+.idea/
+index.html
+images/
+stylesheets/
+support/
+features_report.html
+*.xml
+!features/support/
+log/
+debug.log
+cucumber.json

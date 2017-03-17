@@ -1,0 +1,27 @@
+#default: --no-source --color BROWSER=firefox --format pretty  --format html --out results.html --format json --out reports.json
+#default: --format PrettyFace::Formatter::Html --out index.html DATA_YML_FILE=data.yml  BROWSER=ie
+#scenario: --tags @login,@Logout
+#default: --profile html_report --profile bvt
+default: --profile json_report --profile bvt
+#html_report: --format progress --format html --out=features_report.html BROWSER=firefox
+html_report: --format PrettyFace::Formatter::Html --out index.html DATA_YML_FILE=data.yml  BROWSER=firefox
+json_report: --format json -o cucumber.json DATA_YML_FILE=data.yml  BROWSER=firefox
+bvt: --tags @Login,@Prices
+
+
+##https://robots.thoughtbot.com/five-ridiculously-awesome-cucumber-and-webrat
+#
+#default: >
+#  --format pretty -r features/support/env.rb -r features/support/plain.rb
+#  -r features/step_definitions features
+#selenium: >
+#  -r features/support/env.rb -r features/support/selenium.rb
+#  -r features/step_definitions features
+#html_output: >
+#  --format html -r features/support/env.rb -r features/support/plain.rb
+#  -r features/step_definitions features
+#
+##Within your terminal, you can run:
+#
+#
+#cucumber -p html_output
